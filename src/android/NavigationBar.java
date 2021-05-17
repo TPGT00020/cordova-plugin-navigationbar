@@ -97,6 +97,7 @@ public class NavigationBar extends CordovaPlugin {
                         uiOptions &= ~View.SYSTEM_UI_FLAG_IMMERSIVE_STICKY;
 
                         window.getDecorView().setSystemUiVisibility(uiOptions);
+                        window.getDecorView().setSystemUiVisibility(View.SYSTEM_UI_FLAG_VISIBLE);
 
                         window.getDecorView().setOnFocusChangeListener(null);
                         window.getDecorView().setOnSystemUiVisibilityChangeListener(null);
